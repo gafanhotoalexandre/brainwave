@@ -9,7 +9,7 @@ export function Section({
   children,
 }) {
   return (
-    <div
+    <div /* observar possível erro */
       id={id}
       className={`relative ${
         customPaddings ||
