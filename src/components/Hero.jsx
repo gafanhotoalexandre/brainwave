@@ -1,16 +1,25 @@
+import { useRef } from "react";
+import { ScrollParallax } from "react-just-parallax";
+
+import { BackgroundCircles, BottomLine, Gradient } from "./design/Hero";
+import { heroIcons } from "../constants";
+
 import { Section } from "./Section";
 import { Button } from "./Button";
 
 import { curve, heroBackground, robot } from "../assets";
 
 export function Hero() {
+  const parallaxRef = useRef(null);
   return (
     <Section
       className="pt-[12rem] -mt-[5.25rem]"
       crosses
       crossesOffset="lg:translate-y-[5.25rem]"
+      customPaddings // efeito estranho
+      id="hero"
     >
-      <div className="container relative">
+      <div ref={parallaxRef} className="container relative">
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[4rem] md:mb-20 lg:mb-[6rem]">
           <h1 className="h1 mb-6">
             Explore as Possibilidades de Conversas com IA com o{" "}
@@ -47,8 +56,20 @@ export function Hero() {
                   width={1024}
                   height={490}
                 />
+
+                <ScrollParallax isAbsolutelyPositioned>
+                  <ul className="hidden absolute -left-[5.5rem] bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex">
+                    {heroIcons.map((icon, index) => (
+                      <li className="p-5" key={index}>
+                        <img src={icon} alt={icon} width={24} height={24} />
+                      </li>
+                    ))}
+                  </ul>
+                </ScrollParallax>
               </div>
             </div>
+
+            <Gradient />
           </div>
 
           <div className="absolute -top-[54%] left-1/2 w-[234%] -translate-x-1/2 md:-top-[46%] md:w-[138%] lg:-top-[104%]">
@@ -60,6 +81,7 @@ export function Hero() {
               alt="Hero"
             />
           </div>
+          <BackgroundCircles />
         </div>
       </div>
     </Section>
