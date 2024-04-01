@@ -7,8 +7,10 @@ import { heroIcons } from "../constants";
 import { Section } from "./Section";
 import { Button } from "./Button";
 import { Generating } from "./Generating";
+import { Notification } from "./Notification";
 
 import { curve, heroBackground, robot } from "../assets";
+import { CompanyLogos } from "./CompanyLogos";
 
 export function Hero() {
   const parallaxRef = useRef(null);
@@ -69,6 +71,13 @@ export function Hero() {
                     ))}
                   </ul>
                 </ScrollParallax>
+
+                <ScrollParallax isAbsolutelyPositioned>
+                  <Notification
+                    className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
+                    title="Geração de Código"
+                  />
+                </ScrollParallax>
               </div>
             </div>
 
@@ -86,6 +95,8 @@ export function Hero() {
           </div>
           <BackgroundCircles />
         </div>
+
+        <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
       </div>
 
       <BottomLine />
