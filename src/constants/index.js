@@ -244,7 +244,7 @@ export const pricing = [
 export const benefits = [
   {
     id: "0",
-    title: "Pergunte qualquer coisa",
+    title: "Pergunte sobre tudo",
     text: "Permite que os usuários encontrem rapidamente respostas para suas perguntas sem ter que pesquisar em várias fontes.",
     backgroundUrl: "./src/assets/benefits/card-1.svg",
     iconUrl: benefitIcon1,
@@ -252,7 +252,7 @@ export const benefits = [
   },
   {
     id: "1",
-    title: "Melhore todos os dias",
+    title: "Melhore diariamente",
     text: "O aplicativo usa processamento de linguagem natural para entender as consultas do usuário e fornecer respostas precisas e relevantes.",
     backgroundUrl: "./src/assets/benefits/card-2.svg",
     iconUrl: benefitIcon2,
@@ -261,7 +261,7 @@ export const benefits = [
   },
   {
     id: "2",
-    title: "Conecte-se em qualquer lugar",
+    title: "Conecte-se de qualquer lugar",
     text: "Conecte-se com o chatbot de IA de qualquer lugar, em qualquer dispositivo, tornando-o mais acessível e conveniente.",
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
@@ -278,7 +278,7 @@ export const benefits = [
   },
   {
     id: "4",
-    title: "Pergunte qualquer coisa",
+    title: "Pergunte sobre tudo",
     text: "Permite que os usuários encontrem rapidamente respostas para suas perguntas sem ter que pesquisar em várias fontes.",
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
@@ -286,7 +286,7 @@ export const benefits = [
   },
   {
     id: "5",
-    title: "Melhore todos os dias",
+    title: "Melhore diariamente",
     text: "O aplicativo usa processamento de linguagem natural para entender as consultas do usuário e fornecer respostas precisas e relevantes.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
