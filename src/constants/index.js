@@ -128,21 +128,21 @@ export const roadmap = [
 ];
 
 export const collabText =
-  "With smart automation and top-notch security, it's the perfect solution for teams looking to work smarter.";
+  "Com automação inteligente e segurança de primeira linha, é a solução perfeita para equipes que buscam trabalhar de forma mais inteligente.";
 
 export const collabContent = [
   {
     id: "0",
-    title: "Seamless Integration",
+    title: "Integração Perfeita",
     text: collabText,
   },
   {
     id: "1",
-    title: "Smart Automation",
+    title: "Automação Inteligente",
   },
   {
     id: "2",
-    title: "Top-notch Security",
+    title: "Segurança de Primeira Linha",
   },
 ];
 
