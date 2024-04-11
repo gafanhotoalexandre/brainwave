@@ -30,7 +30,7 @@ Este projeto utiliza as seguintes tecnologias:
 Clone o repositório e instale as dependências:
 
 ```bash
-git clone https://github.com/seu-usuario/brainwave.git
+git clone https://github.com/gafanhotoalexandre/brainwave.git
 cd brainwave
 npm install
 ```
